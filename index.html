@@ -2,15 +2,37 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/flower_icon.png">
     <title>AliceDrop.site</title>
+    <style>
+        #msg{
+            border: 1px solid #ccc;
+            border-radius: 30px;
+            box-shadow: 5px 5px 10px #ccc;
+            padding: 50px;
+            margin: 0 auto;
+
+            position: absolute;
+            top: 40%;
+            left: 40%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
-	<p>主站暂不对外开放。即将跳转已开放部分。</p>
+    <div id="msg">
+
+        <p>主站暂不对外开放。即将跳转已开放部分。</p>
+        <img src="./img/flower_icon.png" alt="" width="50px">
+    </div>
+
     <script>
 		setTimeout(()=>{
-                    window.location.href = "https://blog.alicedrop.site"
-        }, 1500);
+            window.location.href = "https://blog.alicedrop.site";
+        }, 3000);
 
 
     </script>
