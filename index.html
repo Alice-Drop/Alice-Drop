@@ -10,15 +10,20 @@
             border-radius: 30px;
             box-shadow: 5px 5px 10px #ccc;
             padding: 50px;
-            margin: 0 auto;
+            margin-top: 100px;
 
-            position: absolute;
-            top: 40%;
-            left: 40%;
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            display: inline-block;
+
+        }
+
+        body{
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        #icon_behind{
+            opacity: 0.8;
         }
     </style>
 </head>
@@ -26,13 +31,14 @@
     <div id="msg">
 
         <p>主站暂不对外开放。即将跳转已开放部分。</p>
-        <img src="./img/flower_icon.png" alt="" width="50px">
+        <br>
+        <img src="./img/flower_icon.png" alt="" width="50px" id="icon_behind">
     </div>
 
     <script>
 		setTimeout(()=>{
             window.location.href = "https://blog.alicedrop.site";
-        }, 3000);
+        }, 3500);
 
 
     </script>
